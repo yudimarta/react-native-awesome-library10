@@ -28,7 +28,8 @@
     "prepare": "bob build",
     "release": "release-it",
     "example": "yarn --cwd example",
-    "bootstrap": "yarn example && yarn && yarn example pods"
+    "bootstrap": "yarn example && yarn && yarn example pods",
+    "build:ios": "node node_modules/react-native/local-cli/cli.js bundle --entry-file='./src/index.tsx' --bundle-output='./main.jsbundle' --dev=false --platform='ios' --assets-dest='./ios'"
   },
   "keywords": [
     "react-native",
